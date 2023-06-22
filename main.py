@@ -16,7 +16,7 @@ from email.mime.application import MIMEApplication
 from email.message import EmailMessage
 # import win32com.client
 email_sender = 'omshree.osj18705@gmail.com'
-email_password = 'pilkgvxpwccwaimm'
+email_password = 'password-here'
 email_receiver = 'omshree.osj74404@gmail.com'
 
 subject = '!!!!!!!!INTRUDER ALERT!!!!!!!'
@@ -94,14 +94,7 @@ while True:
             cv2.rectangle(img, (x1, y2-35), (x2, y2), (0, 255, 0), cv2.FILLED)
             cv2.putText(img, name, (x1+6, y2-6), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
             markAttendance(name)
-        # else:
-        #     flag = 0
-        #     print("Intruder")
-        #     y1, x2, y2, x1 = faceLoc
-        #     y1, x2, y2, x1 = y1 * 4, x2 * 4, y2 * 4, x1 * 4
-        #     cv2.rectangle(img, (x1, y1), (x2, y2), (255, 0, 0), 2)
-        #     cv2.rectangle(img, (x1, y2 - 35), (x2, y2), (255, 0, 0), cv2.FILLED)
-        #     cv2.putText(img, "INTRUDER", (x1 + 6, y2 - 6), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
+       
 
 
     if flag == 0:
